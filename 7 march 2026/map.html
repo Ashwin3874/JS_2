@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        //filter()
+        //Map
         
-        data=[23,45,78,89,90,67,98]
-        function greaterthan90(i){
-           return i>=90
+        data = [45,34,44,45];
+        function squre(i){
+            return i**2
+        }
+        console.log(data.map(squre))
 
+        data = [45,34,44,45];
+        function cube(i){
+            return i*i*i
         }
-        function iseven(a){
-           return a%2==0
-        }
-        console.log(data.filter(iseven))
-        console.log(data.filter(greaterthan90))
+        document.write(data.map(cube))
+    
     </script>
 </head>
 <body>
